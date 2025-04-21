@@ -176,9 +176,9 @@ const CollectionCard = ({ title, text, img, alt, dark }) => {
       animate={isInView ? { opacity: 1 } : { opacity: 0.8 }}
       transition={{ duration: 0.7 }}
     >
-      {/* Overlay */}
+      {/* Semi-transparent overlay (lighter on hover to show background image better) */}
       <div
-        className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-70 transition-all duration-500 ease-in-out"
+        className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-30 transition-all duration-500 ease-in-out"
         aria-hidden="true"
       />
 
@@ -196,21 +196,24 @@ const CollectionCard = ({ title, text, img, alt, dark }) => {
         </span>
       </div>
 
-      {/* Content (Visible on hover) */}
+      {/* Content (Visible on hover) - We're keeping the background image visible */}
       <div
         className="absolute inset-0 flex flex-col items-center justify-center p-8 opacity-0 group-hover:opacity-100 transform group-hover:scale-100 scale-95 transition-all duration-500 ease-in-out z-20"
         aria-hidden="true"
       >
-        <h3 className="text-xl font-bold text-white mb-4">{title}</h3>
-        {Array.isArray(text) ? (
-          <ul className="text-sm text-white list-disc list-inside space-y-2 text-left max-w-md">
-            {text.map((point, idx) => (
-              <li key={idx} className="opacity-90">{point}</li>
-            ))}
-          </ul>
-        ) : (
-          <p className="text-white text-sm">{text}</p>
-        )}
+        {/* Semi-transparent text container to improve readability over the background image */}
+        <div className="bg-black bg-opacity-60 rounded-lg p-6 max-w-md">
+          <h3 className="text-xl font-bold text-white mb-4">{title}</h3>
+          {Array.isArray(text) ? (
+            <ul className="text-sm text-white list-disc list-inside space-y-2 text-left">
+              {text.map((point, idx) => (
+                <li key={idx} className="opacity-90">{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-white text-sm">{text}</p>
+          )}
+        </div>
       </div>
     </motion.div>
   );
@@ -605,17 +608,19 @@ const HomePage = () => {
           >
             Just Stand Out.
           </motion.h3>
-          <motion.button
-            className="mt-8 px-8 py-4 bg-black text-white text-sm font-semibold tracking-wider hover:bg-gray-800 transition-all duration-300 shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-            aria-label="Contact Us for marketing services"
-            initial={{ opacity: 0, y: 16 }}
-            animate={ctaInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            whileHover={{ scale: 1.025 }}
-            whileTap={{ scale: 0.975 }}
-          >
-            Contact Us
-          </motion.button>
+          <Link href={"/contact-us"} passHref>
+            <motion.button
+              className="mt-8 px-8 py-4 bg-black text-white text-sm font-semibold tracking-wider hover:bg-gray-800 transition-all duration-300 shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              aria-label="Contact Us for marketing services"
+              initial={{ opacity: 0, y: 16 }}
+              animate={ctaInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              whileHover={{ scale: 1.025 }}
+              whileTap={{ scale: 0.975 }}
+            >
+              Contact Us
+            </motion.button>
+          </Link>
         </div>
       </motion.section>
     </motion.main>
