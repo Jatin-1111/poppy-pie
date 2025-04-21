@@ -128,9 +128,17 @@ export const services = [
         id: "service-1",
         title: "Content Creation",
         description:
-            "We offer content suggestions personalized to your social media plan for your brand, both in posts and videos.",
-        details:
-            "Our process starts with in-depth research-studying competitors, market trends, and audience behavior. For posts, we create personalized blogs with SEO-friendly content and collaborate with talented graphic designers to craft visuals that grab attention. For videos, we go through the same research process, followed by scripting, editing, and perfecting based on your desired audience. If required, we can also handle your social media and post the content directly. Whether dynamic or static, we ensure everything is according to your brand and effectively engages your community.",
+            `We offer content suggestions personalized to your social media plan for your brand, both in 
+            posts and videos. Our process starts with in-depth research-studying competitors, market 
+            trends, and audience behavior.
+            For posts, we create personalized blogs with SEO-friendly content and collaborate with talented 
+            graphic designers to craft visuals that grab attention.
+            For videos, we go through the same research process, followed by scripting, editing, and 
+            perfecting based on your desired audience.
+            If required, we can also handle your social media and post the content directly. Whether 
+            dynamic or static, we ensure everything is according to your brand and effectively engages your 
+            community.
+            `,
         features: [
             "In-depth market and competitor research",
             "SEO-friendly blog post creation",
@@ -145,9 +153,14 @@ export const services = [
         id: "service-2",
         title: "SEO Content Writer",
         description:
-            "We provide SEO content writing services to enhance new as well as current website or blog content.",
-        details:
-            "You may either be beginning from the ground up or have topics you'd like to focus on already; we thoroughly research and compose top-quality, keyword-optimized content specific to your audience. For new websites, we write content and blogs from scratch. We use the most reliable SEO tools, new data, and improved structure to enhance search rankings. Our aim to make your content rank higher, reach the target audience, and enhance your online presence with relevant and clear SEO-friendly writing.",
+            `We provide SEO content writing services to enhance new as well as current website or blog content.
+
+            You may either be beginning from the ground up or have topics you'd like to focus on already; we thoroughly research and compose top-quality, keyword-optimized content specific to your audience.
+
+            For new websites, we write content and blogs from scratch. We use the most reliable SEO tools, new data, and improved structure to enhance search rankings.
+
+            Our aim to make your content rank higher, reach the target audience, and enhance your online presence with relevant and clear SEO-friendly writing.
+`,
         features: [
             "Comprehensive keyword research",
             "New website content creation",
@@ -162,9 +175,12 @@ export const services = [
         id: "service-3",
         title: "Sales & Marketing Automation",
         description:
-            "We assist companies in saving time and growing more quickly by streamlining repetitive workflows on platforms such as LinkedIn, email, SMS, WhatsApp, and websites.",
-        details:
-            "Our solutions cover LinkedIn outreach, tailored email workflows, scheduling campaigns, chatbot setup, and instant messaging automation. We develop intelligent, bespoke automation solutions from lead generation to customer care that increase engagement and deliver results. No matter if you desire auto-connect with prospects or provide 24/7 support, we provide consistent and smooth communication. Concentrate on growing your business while we process it seamlessly to align with your objectives.",
+            `We assist companies in saving time and growing more quickly by streamlining repetitive workflows on platforms such as LinkedIn, email, SMS, WhatsApp, and websites.
+
+            Our solutions cover LinkedIn outreach, tailored email workflows, scheduling campaigns, chatbot setup, and instant messaging automation. We develop intelligent, bespoke automation solutions from lead generation to customer care that increase engagement and deliver results. 
+
+            No matter if you desire auto-connect with prospects or provide 24/7 support, we provide consistent and smooth communication. Concentrate on growing your business while we process it seamlessly to align with your objectives.
+`,
         features: [
             "LinkedIn outreach automation",
             "Custom email workflow development",
@@ -179,9 +195,12 @@ export const services = [
         id: "service-4",
         title: "Market Research",
         description:
-            "We begin by learning how your business operates, its organization, business model, and how it generates revenue.",
-        details:
-            "Once we know the fundamentals, we determine who your audience is and how to effectively reach them. We also research your competitors to understand what they're doing and how they engage with their audience. Guided by all of these considerations, we design unique strategies incorporating data gathering, outreach planning, and audience creation. We want to assist you in reaching the ideal people in the most intelligent way possible.",
+            `We begin by learning how your business operates, its organization, business model, and how it generates revenue.
+
+            Once we know the fundamentals, we determine who your audience is and how to effectively reach them. We also research your competitors to understand what they're doing and how they engage with their audience.
+
+            Guided by all of these considerations, we design unique strategies incorporating data gathering, outreach planning, and audience creation. We want to assist you in reaching the ideal people in the most intelligent way possible.
+            `,
         features: [
             "Business model and operations analysis",
             "Target audience identification",
@@ -196,9 +215,12 @@ export const services = [
         id: "service-5",
         title: "Social Media Management",
         description:
-            "We will assist in growing on all major social media platforms with a sound & strategic planning.",
-        details:
-            "It's not merely about posting–it's about planning the correct content, studying trends, crafting keyword rich captions, and creating scroll stopping visuals. Our service incorporate content planning, channel management, performance analysis, and targeted growth strategies. From creating a content calendar to scheduling daily posts and tracking engagement, we keep your brand active, consistent, and effective online. Whether you're looking for a fresh start or thinking to scale, we manage every detail to enable you to engage with your audience and expand your online presence.",
+            `We will assist in growing on all major social media platforms with a sound & strategic planning. It's not merely about posting–it’s about planning the correct content, studying trends, crafting keyword rich captions, and creating scroll stopping visuals. 
+
+            Our service incorporate content planning, channel management, performance analysis, and targeted growth strategies. 
+
+            From creating a content calendar to scheduling daily posts and tracking engagement, we keep your brand active, consistent, and effective online. Whether you're looking for a fresh start or thinking to scale, we manage every detail to enable you to engage with your audience and expand your online presence. 
+`,
         features: [
             "Strategic content planning and calendar creation",
             "Multi-channel platform management",
@@ -213,9 +235,12 @@ export const services = [
         id: "service-6",
         title: "Offline Sales",
         description:
-            "If your company requires assistance with offline sales, we've got you covered! On a fixed compensation basis, we can offer you a trained salesperson from our team who will generate leads for you.",
-        details:
-            "Our sales expert will take the time to learn about your business, services, and objectives in detail before they begin. This enables them to represent your brand appropriately and communicate with potential customers with confidence and ease. Our sales professionals are seasoned and skilled at delivering results. It is an excellent alternative if you want someone to scale your sales using direct face-to-face relationships!",
+            `If your company requires assistance with offline sales, we've got you covered! On a fixed compensation basis, we can offer you a trained salesperson from our team who will generate leads for you.
+
+            Our sales expert will take the time to learn about your business, services, and objectives in detail before they begin. This enables them to represent your brand appropriately and communicate with potential customers with confidence and ease.
+
+            Our sales professionals are seasoned and skilled at delivering results. It is an excellent alternative if you want someone to scale your sales using direct face-to-face relationships!
+`,
         features: [
             "Dedicated sales professional assignment",
             "Comprehensive business and service training",
@@ -230,9 +255,12 @@ export const services = [
         id: "service-7",
         title: "Social Media Ads",
         description:
-            "We design and run top-performing ad campaigns across platforms such as Facebook, Instagram, and LinkedIn.",
-        details:
-            "We handle campaign setup, budgeting, audience targeting, and on-going optimization. We perform A/B tests, monitor conversions through Meta Pixel, and create custom and lookalike audiences for improved reach. We also offer strategic ad creatives and persuasive copy, together with clear performance reporting to ensure you are always up-to-date. From conceptualization to execution, we do it all, making your ads reach the correct audience, spark engagement, and drive results.",
+            `We design and run top-performing ad campaigns across platforms such as Facebook, Instagram, and LinkedIn. We handle campaign setup, budgeting, audience targeting, and on-going optimization.
+
+            We perform A/B tests, monitor conversions through Meta Pixel, and create custom and lookalike audiences for improved reach. We also offer strategic ad creatives and persuasive copy, together with clear performance reporting to ensure you are always up-to-date.
+
+            From conceptualization to execution, we do it all, making your ads reach the correct audience, spark engagement, and drive results.
+`,
         features: [
             "Campaign setup and configuration",
             "Budget management and optimization",
