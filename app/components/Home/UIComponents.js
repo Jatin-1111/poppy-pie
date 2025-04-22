@@ -76,13 +76,6 @@ export const CollectionCard = ({ title, text, img, alt, dark }) => {
                 aria-hidden="true"
             />
 
-            {/* Semi-transparent overlay - becomes transparent on hover/tap */}
-            <div
-                className={`absolute inset-0 bg-black transition-all duration-500 ease-in-out ${isActive ? "bg-transparent" : "bg-opacity-40 group-hover:bg-transparent"
-                    }`}
-                aria-hidden="true"
-            />
-
             {/* Title Card (Visible by default, hidden on hover/tap) */}
             <div
                 className={`absolute inset-0 flex items-center justify-center z-10 transition-opacity duration-500 ${isActive ? "opacity-0" : "group-hover:opacity-0"
